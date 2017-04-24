@@ -1,106 +1,43 @@
-  @include('layouts._header')
-
-  <div class="col-md-4">
-          <div class="box box-solid">
-            <div class="box-header with-border">
-
-              <h3 class="box-title">Block Quotes</h3>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-             BODY
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-   </div>
-        <!-- ./col -->
-  
-  <div class="row">
-    <div class="col-md-2">
-      <div class="box box-primary">
-       <div class="box-header with-border">
-        <h3 class="box-title">Login</h3>
-        <div class="box-tools pull-right">
-          <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-          </button>
-          <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
-          </button>
-        </div>
+@extends('layouts.master')
+@section('content') 
+<div class="col-md-6">
+ <div class="box-body">                                 
+  <div class="box box-widget">
+    <div class="box-header with-border">
+      <div class="user-block">
+        <img class="img-circle " width="100" src="../dist/img/user1-128x128.jpg" alt="User Image">
+        <span class="username"><a href="#"></a></span>
+        <span class="description">Author: Admin  - 7:30 PM Today</span>
       </div>
-      <div class="box-body box-profile">
-        <p class="login-box-msg">(hidden if logged ) Sign in to start your session</p>
 
-        <form action="" method="post">
-          <div class="form-group has-feedback">
-            <input type="email" class="form-control" placeholder="Email">
-            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-          </div>
-          <div class="form-group has-feedback">
-            <input type="password" class="form-control" placeholder="Password">
-            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-          </div>
-
-
-          <div class="checkbox icheck">
-            <label>
-              <input type="checkbox"> Remember Me
-            </label>
-          </div>
-
-          <!-- /.col -->
-
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
-
-          <!-- /.col -->
-
-        </form>
-      </div>
-      <!-- /.box-body -->
-      </div>
-      <div class="box box-primary">
-       <div class="box-header with-border">
-        <h3 class="box-title">Profile</h3>
-        <div class="box-tools pull-right">
-          <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-          </button>
-          <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
-          </button>
-        </div>
-      </div>
-      <div class="box-body box-profile">
-        <img class="profile-user-img img-responsive img-circle" src="../../dist/img/user4-128x128.jpg" alt="User profile picture">
-
-        <h3 class="profile-username text-center">Admin</h3>
-
-        <p class="text-muted text-center">Role: Admin</p>
-
-        <ul class="list-group list-group-unbordered">
-          <li class="list-group-item">
-           <a href="#" class="btn btn-primary btn-block"><b>Upload New Lyric</b></a>
-         </li>
-         <li class="list-group-item">
-           <a href="#" class="btn btn-success btn-block"><b>Profile</b></a>
-         </li>
-
-       </ul>
-
-       <a href="#" class="btn btn-danger btn-block"><b>Logout</b></a>
-     </div>
-     <!-- /.box-body -->
-   </div>
-
- </div>
- <!-- /.box -->
- <!-- /.box -->
+    </div>
+    <!-- /.box-header -->
+    <div class="box-body">
+      <img class="img-responsive pad pull-left" width="100" src="../dist/img/photo2.png" alt="Photo">
+      <p>I took this photo this morning. What do you guys think?  Description about the attachment can be placed here.Lorem Ipsum is simply dummy text of the printing and typesetting industry... <a href="#">more</a></p>         
+    </div>      
+    <div class="box-footer">
+      <button type="button" class="btn btn-default btn-xs"></i>#JAVA</button>
+      <button type="button" class="btn btn-default btn-xs"></i>#Programming</button><button type="button" class="btn btn-default btn-xs"></i>#JAVA</button>
+      <button type="button" class="btn btn-default btn-xs"></i>#Programming</button><button type="button" class="btn btn-default btn-xs"></i>#JAVA</button>
+      <button type="button" class="btn btn-default btn-xs"></i>#Programming</button>
+      <span class="pull-right text-muted">127 likes - 3 comments</span>
+    </div>
+    <!-- /.box-footer -->
+  </div>
+  <!-- /.box -->
 </div>
-<div class="col-md-4">
+</div>
+<!-- /.col -->
 
-</div>
-</section>
-<!-- /.content -->
-</div>
-<!-- /.container -->
-</div>
-<!-- /.content-wrapper -->
-@include('layouts._footer')
+
+
+
+
+
+
+
+
+
+<!--  end of  posts -->
+@stop
