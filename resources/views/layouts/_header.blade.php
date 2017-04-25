@@ -13,16 +13,18 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ URL::asset('bootstrap/css/bootstrap.min.css') }}" >
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="{{ URL::asset('dist/css/AdminLTE.min.css') }}" >
+
   <!-- AdminLTE Skins. Choose a skin from the css/skins
   folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+      <link rel="stylesheet" href="{{ URL::asset('dist/css/skins/_all-skins.min.css') }}" >
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,7 +50,7 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
             <ul class="nav navbar-nav">
-              <li><a href="/lyrics"><i class="fa fa-file-text-o fa-fw margin-icon" aria-hidden="true"></i>Home</a></li>
+              <li><a href="/"><i class="fa fa-file-text-o fa-fw margin-icon" aria-hidden="true"></i>Home</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle " data-toggle="dropdown"><i class="fa fa-music fa-fw margin-icon" aria-hidden="true"></i>Categories <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
@@ -62,13 +64,11 @@
                 </ul>
               </li>
 
-            
-              <li><a href="/videos"><i class="fa fa-video-camera fa-fw margin-icon" aria-hidden="true"></i>Videos</a></li>
-              <li><a href="/news"><i class="fa fa-newspaper-o fa-fw margin-icon" aria-hidden="true"></i>News</a>
-                
 
+              <li><a href="/videos"><i class="fa fa-video-camera fa-fw margin-icon" aria-hidden="true"></i>Test2</a></li>
+              <li><a href="/news"><i class="fa fa-newspaper-o fa-fw margin-icon" aria-hidden="true"></i>Test3</a>             
               </li>
- <li><a href="/profile"><i class="fa fa-user fa-fw margin-icon" aria-hidden="true"></i>Profile</a></li>
+              <li><a href="/users"><i class="fa fa-user fa-fw margin-icon" aria-hidden="true"></i>Users</a></li>
               <li><a href="/contact"><i class="fa fa-envelope-o fa-fw margin-icon" aria-hidden="true"></i>Contact</a></li>
               <li><a href="/admin">admin menu</a></li>       
 
@@ -80,11 +80,7 @@
           <!-- Navbar Right Menu -->
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-
-
-
-
-              <!-- User Account Menu -->
+          <!-- User Account Menu -->
               <li class="dropdown user user-menu">
                 <!-- Menu Toggle Button -->
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -131,11 +127,4 @@
       <!-- /.container-fluid -->
     </nav>
   </header>
-  <!-- Full Width Column -->
-  <div class="content-wrapper">
-    <div class="container-fluid">
-      <!-- Content Header (Page header) -->
-
-
-      <!-- Main content -->
-      <section class="content">
+ 

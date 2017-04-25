@@ -15,7 +15,6 @@
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
 
 
 
@@ -23,9 +22,14 @@ Route::get('/', function () {
     return view('layouts.home');
 });
 
-Route::get('profile/{id?}', function ($id = null) {
-	return view('layouts.profile');
+
+Route::get('users/{id?}', function ($id = null) {
+	return view('layouts.users');
 });
+
+
+
+
 
 
 Route::get('videos/{genrename?}', function ($genrename = null) {
@@ -33,9 +37,7 @@ Route::get('videos/{genrename?}', function ($genrename = null) {
 });
 
 
-Route::resource('users', 'UsersController', [
-    'only' => ['index', 'show']
-]);
+
 
 Route::get('lyrics', function () {
     return view('layouts.lyrics');
