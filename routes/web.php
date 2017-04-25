@@ -52,3 +52,19 @@ Route::get('def', function () {
 Route::get('news', function () {
     return view('layouts.news');
 });
+
+Route::get('admin/edit-posts', function () {
+    return view('admin/edit-posts');
+});
+
+Route::get('admin/categories', function () {
+    return view('admin/categories');
+});
+
+Route::get('admin/edit-users', function () {
+    return view('admin/edit-users');
+});
+
+Route::get('admin/settings', function () {
+    return view('admin/settings');
+});
