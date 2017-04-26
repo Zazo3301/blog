@@ -70,3 +70,12 @@ Route::get('admin/edit-users', function () {
 Route::get('admin/settings', function () {
     return view('admin/settings');
 });
+
+Route::get('posts/create', function () {
+    return view('posts.create');
+});
+Route::resource('posts', 'PostController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
